@@ -15,11 +15,17 @@ class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Text('Signup'),
+            Image.asset(
+              'images/undraw_Specs_re_546x.png',
+              fit: BoxFit.cover,
+            ),
             TextFormField(
               controller: fullNameController,
               decoration: InputDecoration(

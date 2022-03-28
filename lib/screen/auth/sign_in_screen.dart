@@ -14,11 +14,17 @@ class _SignInScreenState extends State<SignInScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Text('Signin'),
+            Image.asset(
+              'images/undraw_new_ideas_jdea.png',
+              fit: BoxFit.cover,
+            ),
             TextFormField(
               controller: emailController,
               decoration: InputDecoration(
