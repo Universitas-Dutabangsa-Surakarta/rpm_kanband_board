@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kanban_board/screen/sign_up_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,9 +25,24 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('Judul')),
-      body: Center(child: Text('Hello world')),
+    return Column(
+      children: [
+        Text('Selamat Datang'),
+        Image.asset(
+          'images/undraw_Process_re_gws7.png',
+          fit: BoxFit.cover,
+        ),
+        ElevatedButton(
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => SignUpScreen()));
+            },
+            child: Text('Login')),
+        ElevatedButton(onPressed: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => SignUpScreen()));
+        }, child: Text('Signup')),
+      ],
     );
   }
 }
