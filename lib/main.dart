@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kanban_board/screen/sign_in_screen.dart';
 import 'package:kanban_board/screen/sign_up_screen.dart';
 
 void main() {
@@ -35,9 +36,9 @@ class MyHomePage extends StatelessWidget {
         ElevatedButton(
             onPressed: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => SignUpScreen()));
+                  MaterialPageRoute(builder: (context) => SignInScreen()));
             },
-            child: Text('Login')),
+            child: Text('Signin')),
         ElevatedButton(onPressed: () {
           Navigator.push(context,
               MaterialPageRoute(builder: (context) => SignUpScreen()));
