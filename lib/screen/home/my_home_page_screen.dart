@@ -20,6 +20,11 @@ class MyHomePageScreen extends StatelessWidget {
             fit: BoxFit.cover,
           ),
           ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30),
+                ),
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
@@ -30,6 +35,11 @@ class MyHomePageScreen extends StatelessWidget {
               },
               child: Text('Signin')),
           ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30),
+                ),
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
